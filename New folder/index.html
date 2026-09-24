@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Management System</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="header">
+
+            <div class="header-left">
+                <button class="menu-button" type="button" aria-label="Open menu">
+                    ☰
+                </button>
+
+                <h1>Employee Management</h1>
+            </div>
+
+            <div class="header-right">
+                <span class="user-name">Admin</span>
+
+                <button class="profile-button" type="button">
+                    👤
+                </button>
+            </div>
+
+        </header>
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-title">
+                <h2>Admin Panel</h2>
+            </div>
+
+            <nav class="sidebar-nav" aria-label="Main navigation">
+
+                <a href="#" class="active">
+                    <span>📊</span>
+                    Dashboard
+                </a>
+
+                <a href="#">
+                    <span>👥</span>
+                    Employees
+                </a>
+
+                <a href="#">
+                    <span>🏢</span>
+                    Departments
+                </a>
+
+                <a href="#">
+                    <span>📋</span>
+                    Reports
+                </a>
+
+                <a href="#">
+                    <span>⚙️</span>
+                    Settings
+                </a>
+
+            </nav>
+            
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="main-content">
+
+            <!-- Page heading -->
+
+            <section class="page-heading">
+
+                <div>
+                    <h2>Dashboard</h2>
+                    <p>Welcome back, Admin.</p>
+                </div>
+
+                <button class="primary-button" type="button">
+                    + Add Employee
+                </button>
+
+            </section>
+
+
+            <!-- ================= STATISTICS ================= -->
+
+            <section class="statistics" aria-label="Employee statistics">
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+                        👥
+                    </div>
+
+                    <div>
+                        <h3>Total Employees</h3>
+                        <p>1,250</p>
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+                        🏢
+                    </div>
+
+                    <div>
+                        <h3>Departments</h3>
+                        <p>12</p>
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+                        🆕
+                    </div>
+
+                    <div>
+                        <h3>New Employees</h3>
+                        <p>48</p>
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+                        ⏳
+                    </div>
+
+                    <div>
+                        <h3>Pending Requests</h3>
+                        <p>15</p>
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- ================= EMPLOYEE TABLE ================= -->
+
+            <section class="card">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>Recent Employees</h2>
+                        <p>Recently registered employees</p>
+                    </div>
+
+                    <button class="secondary-button" type="button">
+                        View All
+                    </button>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Department</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <div class="employee-name">
+                                        <div class="avatar">JD</div>
+
+                                        <span>John Doe</span>
+                                    </div>
+                                </td>
+
+                                <td>john@example.com</td>
+
+                                <td>IT</td>
+
+                                <td>
+                                    <span class="badge active-badge">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="table-button" type="button">
+                                        View
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <div class="employee-name">
+                                        <div class="avatar">MS</div>
+
+                                        <span>Mary Smith</span>
+                                    </div>
+                                </td>
+
+                                <td>mary@example.com</td>
+
+                                <td>Human Resources</td>
+
+                                <td>
+                                    <span class="badge active-badge">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="table-button" type="button">
+                                        View
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <div class="employee-name">
+                                        <div class="avatar">DM</div>
+
+                                        <span>David Mensah</span>
+                                    </div>
+                                </td>
+
+                                <td>david@example.com</td>
+
+                                <td>Finance</td>
+
+                                <td>
+                                    <span class="badge pending-badge">
+                                        Pending
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="table-button" type="button">
+                                        View
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <div class="employee-name">
+                                        <div class="avatar">SA</div>
+
+                                        <span>Sarah Adams</span>
+                                    </div>
+                                </td>
+
+                                <td>sarah@example.com</td>
+
+                                <td>Marketing</td>
+
+                                <td>
+                                    <span class="badge active-badge">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="table-button" type="button">
+                                        View
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <div class="employee-name">
+                                        <div class="avatar">KW</div>
+
+                                        <span>Kevin Williams</span>
+                                    </div>
+                                </td>
+
+                                <td>kevin@example.com</td>
+
+                                <td>IT</td>
+
+                                <td>
+                                    <span class="badge inactive-badge">
+                                        Inactive
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="table-button" type="button">
+                                        View
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= ADD EMPLOYEE FORM ================= -->
+
+            <section class="card">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>Add New Employee</h2>
+                        <p>Register a new employee in the system.</p>
+                    </div>
+
+                </div>
+
+
+                <form>
+
+                    <fieldset>
+
+                        <legend>Personal Information</legend>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="fullName">
+                                    Full Name
+                                </label>
+
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter full name" required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input type="email" id="email" name="email" placeholder="Enter email address" required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="date">
+                                    Date of Birth
+                                </label>
+
+                                <input type="date" id="date" name="date">
+
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset>
+
+                        <legend>Employment Information</legend>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="department">
+                                    Department
+                                </label>
+
+                                <select id="department" name="department" required>
+
+                                    <option value="">
+                                        Select department
+                                    </option>
+
+                                    <option value="it">
+                                        IT
+                                    </option>
+
+                                    <option value="hr">
+                                        Human Resources
+                                    </option>
+
+                                    <option value="finance">
+                                        Finance
+                                    </option>
+
+                                    <option value="marketing">
+                                        Marketing
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="position">
+                                    Position
+                                </label>
+
+                                <input type="text" id="position" name="position" placeholder="Enter position">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="salary">
+                                    Salary
+                                </label>
+
+                                <input type="number" id="salary" name="salary" placeholder="Enter salary" min="0">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="startDate">
+                                    Start Date
+                                </label>
+
+                                <input type="date" id="startDate" name="startDate">
+
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset>
+
+                        <legend>Additional Information</legend>
+
+
+                        <div class="form-group">
+
+                            <label for="bio">
+                                Employee Bio
+                            </label>
+
+                            <textarea id="bio" name="bio" rows="5"
+                                placeholder="Write a short description about the employee..."></textarea>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="profileImage">
+                                Profile Image
+                            </label>
+
+                            <input type="file" id="profileImage" name="profileImage" accept="image/*">
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <div class="form-actions">
+
+                        <button type="reset" class="cancel-button">
+                            Cancel
+                        </button>
+
+                        <button type="submit" class="primary-button">
+                            Register Employee
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
